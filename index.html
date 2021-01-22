@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早稲田トコキャンゼミ口コミサイト</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <script src="./dist/main.js"></script>
+</head>
+<body>
+<h1>早稲田トコキャンゼミ口コミサイト</h1> 
+<!-- とこログ・とこナビ -->
+
+
+<h2>人間環境科学科</h2>
+
+<div class="container">
+    <div class="box"><a href="1-1akanuma.html">赤沼哲史ゼミ</a></div>
+    <div class="box">太田俊二ゼミ</div>
+    <div class="box">柏雅之ゼミ</div>
+</div>
+
+
+
+<h2>健康福祉科学科</h2>
+<div class="container">
+    <div class="box">大須理英子ゼミ</div>
+    <div class="box">榊原伸一ゼミ</div>
+    <div class="box">竹中晃二ゼミ</div>
+</div>
+
+
+<h2>人間情報科学科</h2>
+<div class="container">
+    <div class="box">金子孝夫ゼミ</div>
+    <div class="box">菊池英明ゼミ</div>
+    <div class="box">金群ゼミ</div>
+</div>
+
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener("load", async () => {
+        console.log("SWを読み込んでいます");
+        await navigator.serviceWorker.register("/sw.js");
+    });
+}
+</script>
+</body>
+</html>
